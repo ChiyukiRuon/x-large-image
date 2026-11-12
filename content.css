@@ -1,0 +1,17 @@
+.xli-stitch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 12px 0;
+    padding: 8px 16px;
+    border: 1px solid #888;
+    border-radius: 999px;
+    color: inherit;
+    background: transparent;
+    font: 600 13px/1.5 system-ui, sans-serif;
+    cursor: pointer;
+}
+.xli-stitch-button:hover { background: #8882; }
+.xli-stitch-button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.xli-stitch-button:disabled { opacity: .6; cursor: wait; }

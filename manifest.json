@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "X Large Image · 多图拼接",
+    "version": "0.1.0",
+    "description": "将 X 帖子的多张原图按顺序无缝拼接，在本地保存为 PNG。",
+    "minimum_chrome_version": "109",
+    "permissions": ["downloads"],
+    "host_permissions": ["https://pbs.twimg.com/*"],
+    "background": { "service_worker": "background.js" },
+    "content_scripts": [{
+        "matches": ["https://x.com/*", "https://www.x.com/*", "https://twitter.com/*", "https://www.twitter.com/*"],
+        "js": ["core.js", "content.js"],
+        "css": ["content.css"]
+    }]
+}
